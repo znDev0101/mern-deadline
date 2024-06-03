@@ -4,8 +4,8 @@ import "./App.css"
 function App() {
   const handleCreateTimer = async () => {
     const data = {
-      uuid: "6969966hahaha",
-      setTimer: 69696969,
+      uuid: "2525253asdhhas",
+      setTimer: 6969696934,
     }
 
     const res = await fetch("https://mern-deadline-api.vercel.app/create", {

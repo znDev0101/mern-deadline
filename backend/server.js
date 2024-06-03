@@ -7,12 +7,7 @@ const app = express()
 const port = 3000
 
 app
-  .use(
-    cors({
-      origin: "https://mern-deadline.vercel.app",
-      methods: ["POST", "PUT", "GET"],
-    })
-  )
+  .use(cors())
   .use(express.json())
   .listen(port, () => console.log(`Alamat Server: http://localhost:${port}`))
 
