@@ -14,8 +14,13 @@ app
 // Koneksi ke Database MongoDB
 configDb()
 
+app.get("/", (request, response) => {
+  console.log(request)
+  return response.status(234).send("MERN STACK CONNECTED HAPPY CODE")
+})
+
 // Operasi Read (GET) Data
-app.get("/", getAllData)
+app.get("/getData", getAllData)
 // Operasi Cari Data
 // app.get("/search", searchData)
 // Operasi Create (POST) Data
