@@ -8,7 +8,7 @@ function App() {
       setTimer: 69696969,
     }
 
-    const res = await fetch("http://localhost:3000/create", {
+    const res = await fetch("https://mern-deadline-api.vercel.app/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,7 +19,7 @@ function App() {
   }
 
   const getAllData = async () => {
-    const response = await fetch("http://localhost:3000")
+    const response = await fetch("https://mern-deadline-api.vercel.app/getData")
     const result = await response.json()
     console.log(result)
   }
